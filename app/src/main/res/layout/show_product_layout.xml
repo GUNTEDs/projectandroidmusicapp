@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:background="@drawable/shadow"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:padding="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/showpro_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingTop="10dp" />
+
+
+            <TextView
+                android:id="@+id/showpro_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/showpro_img"
+                android:text="Name"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/showpro_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/showpro_name"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/showpro_img"
+                android:text="brand"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEditProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="4dp"
+                android:background="#F2E0AE"
+                android:onClick="btnEditProduct"
+                android:padding="5dp"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
